@@ -41,54 +41,13 @@
     // $items = $productCollection->getItems();
 
 
-
-    /*
-    ++--++--++--++--++--++--++--++--++--++--++--++--++--++--++--++
-    ++--++--++--++--++--++--++--++--++--++--++--++--++--++--++--++
-    */
-
-
     $categoriesString = $block->getCategories();
 
     $categoriesArray = explode(',', $categoriesString);
     // $categoriesArray = array($categoriesString);
 
 
-
-
-
-    /*
-    ++--++--++--++--++--++--++--++--++--++--++--++--++--++--++--++
-    ++--++--++--++--++--++--++--++--++--++--++--++--++--++--++--++
-    */
-
-
     $allProductCollection = $block->getProductsAllCollection();
-
-    // $category = $block->getCategoryFactory()->create()->load('44');
-    /*$arrAllCategoryProducts = array();
-    $i = 0;
-    foreach ($categoriesArray as $ctgr => $ctgrval) {
-        $items = '';
-        $temp = '';
-        $temp = $block->getCategoryFactory()->create()->load($ctgrval);
-        $allProductCollection1 = $allProductCollection->addCategoryFilter($temp);
-
-        $items = $allProductCollection1->getItems();
-        $arrAllCategoryProducts[$i] = $items;
-        $i++;
-    }*/
-
-    // $allProductCollection->addCategoryFilter($category);
-
-
-    // foreach($categoriesArray as $ctgry){
-    //     $category[] = $this->getCategoryFactory()->create()->load($ctgry);
-    //     $allProductCollection->addCategoryFilter($category[]);
-    // }
-
-    // echo "<pre>";
-
 
     $items = $allProductCollection->getItems();
 
